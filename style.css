@@ -1,0 +1,190 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* * css variables */
+
+:root{
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+
+#logo{
+   margin: 34px 45px;
+}
+
+#logo img{
+    height: 46px;
+    margin: 5px 6px;
+}
+
+/* navigation bar: list styling */
+
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}    
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 4px 6px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 20px;
+    height: 720px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../img/bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;  
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* services section */
+#services{
+   margin: 34px;
+   display: flex;
+}
+
+#services .box{
+   border: 2px solid brown;
+   padding: 34px;
+   margin: 3px 6px; 
+   border-radius: 28px;
+   background: rgb(239, 245, 242);
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+/* clients section */
+#client-section{
+    height: 34px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg0.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .04;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+   height: 90px;
+}
+/* contact section*/
+
+/* #contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/bg0.jpg');
+} */
+
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 3px;
+
+}
+
+.h-secondary{
+    font-size: 2.0rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 7px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 7px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+   
